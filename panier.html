@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./index.css" rel="stylesheet">
+    <title>Panier</title>
+</head>
+<body>
+    <header id="header_header">
+        <img src="./assets/logo.png" id="header_logo" onclick="window.location = './index.html'">
+        <div id="header_div1">
+            <h1>AIR-PC</h1>
+            <p id="header_description">Vendeur de PC ultra-portable</p>
+        </div>
+        <div id="header_div2">
+            <a href="./login.html"><div class="header_buttonInternDiv"><img src="./assets/User-icon.png"><p>Me Connecter</p></div></a>
+            <a id="header_active"><div class="header_buttonInternDiv"><img src="./assets/Panier-icon.png"><p>Mon Panier</p></div></a>
+        </div>
+    </header>
+    <h1 id="panier_Title">Votre panier :</h1>
+    <div id="panier_globalDiv">
+        <div id="panier_contentDiv">
+            <div class="panier_contentDiv">
+                <img src="./assets/macbookM2.png" class="panier_itemPicture">
+                <div>
+                    <p>Macbook Air M2</p>
+                    <p>1300 €</p>
+                </div>
+                <div class="panier_changeQuantityDiv">
+                    <img src="./assets/plus.png" class="panier_upperPrice">
+                    <p>1</p>
+                    <img src="./assets/minus.webp" class="panier_lowerPrice">
+                </div>
+            </div>
+            <div class="panier_contentDiv">
+                <img src="./assets/zenbook.png" class="panier_itemPicture">
+                <div>
+                    <p>Asus ZenBook</p>
+                    <p>1000 €</p>
+                </div>
+                <div class="panier_changeQuantityDiv">
+                    <img src="./assets/plus.png" class="panier_upperPrice">
+                    <p>1</p>
+                    <img src="./assets/minus.webp" class="panier_lowerPrice">
+                </div>
+            </div>
+        </div>
+        <div id="panier_priceDiv">
+            <p>Prix (HT): 1955 €</p>
+            <p>Taxe TVA: 345 €</p>
+            <p style="text-decoration: underline;font-size: 18px;">Total : 2300 €</p>
+            <button id="panier_payButton">Payer</button>
+            <p id="panier_paiementAcceptés">Moyens de paiements acceptés :</p>
+            <div>
+                <img src="./assets/visa.png">
+                <img src="./assets/mastercard.svg">
+                <img src="./assets/bitcoin.png">
+                <img src="./assets/ethereum.png">
+            </div>
+        </div>
+        <div id="panier_promoDiv">
+            <input type="text" placeholder="Code PROMO" value="BUTNANTES40">
+            <div id="panier_wrapper">
+                <p id="panier_validate">Valider</p>
+                <div id="panier_promoImg">
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer style="margin-top: 10vw;">
+        <div id="footer_firstDiv">
+            <div>
+                <h1>INFOS PRATIQUES</h1>
+                <p>Points fidélité</p>
+                <p>Mentions Légales</p>
+                <p>CGV</p>
+            </div>
+            <div>
+                <h1>A PROPOS</h1>
+                <p>SAV</p>
+                <p>Service client</p>
+                <p>Livraisons et retour</p>
+                <p>Nos valeurs</p>
+            </div>
+            <div>
+                <h1>NEWSLETTER</h1>
+                <p>Découvrez en avance nos nouveaux produits</p>
+                <form>
+                    <input type="email" placeholder="Votre Email">
+                    <input type="submit" value="M'inscrire">
+                </form>
+            </div>
+        </div>
+        <div id="footer_secondDiv">
+            <p>Avis de la boutique :</p>
+            <div id="footer_rankDiv">
+                <img src="./assets/starFilled.png" class="footer_star">
+                <img src="./assets/starFilled.png" class="footer_star">
+                <img src="./assets/starFilled.png" class="footer_star">
+                <img src="./assets/starFilled.png" class="footer_star">
+                <div>
+                    <img src="./assets/star.png">
+                    <img src="./assets/starFilled.png" id="footer_filed">
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

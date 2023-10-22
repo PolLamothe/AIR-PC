@@ -1,0 +1,881 @@
+@font-face {
+    font-family: Lilita;
+    src: url("./fonts/Lilita_One/LilitaOne-Regular.ttf");
+}
+@font-face {
+    font-family: Lato;
+    src: url("./fonts/Lato/Lato-Regular.ttf");
+}
+html{
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+    color: black ;
+}
+body{
+    margin: 0px;
+    overflow-x: hidden;
+}
+#header_header{
+    width: 100vw;
+    height: 15vh;
+    background-color: rgb(191, 255, 191);
+    display: flex;
+    padding-left: 10vw;
+    overflow: hidden;
+}
+#header_logo{
+    aspect-ratio: 1/1;
+    height: 80%;
+    margin-top: 7.5vh;
+    transform: translateY(-50%);
+    border-radius: 25px;
+    cursor: pointer;
+}
+#header_header h1{
+    color:#028090;
+    font-weight: bold;
+    font-family: Lilita;
+}
+#header_description{
+    font-family: Lato;
+    font-size: 19px;
+}
+#header_div1{
+    margin-left: 3vw;
+}
+#header_div2{
+    display: flex;
+    position: absolute;
+    right: 0px;
+    margin-right: 5vw;
+    gap: 0.2vw;
+}
+#header_div2 a{
+    height: 15vh;
+    background-color: rgba(0, 0, 0, 0.075);
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    align-items: center;
+    padding-right: 0.5vw;
+    padding-left: 0.5vw;
+    transition-duration: 0.5s;
+}
+#header_div2 a img{
+    min-height: 3vw;
+    max-height: 3vw;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+.header_buttonInternDiv{
+    margin-top: 7.5vh;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.header_buttonInternDiv p{
+    font-size: 17px;
+    font-family: Lato;
+}
+#header_div2 a:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+    transform: scale(1.05);
+}
+#index_BestSellerTitle{
+    text-align: center;
+    font-family: Lato;
+    font-weight: bolder;
+    margin-top: 6vh;
+    margin-bottom: 4vh;
+}
+.index_sliderElementDiv{
+    border: solid 0.2vw black;
+    width: fit-content;
+    border-radius: 30px;
+}
+.index_sliderElementDiv p{
+    font-family: Lato;
+    margin-left: 3vw;
+}
+.index_sliderElementDiv img{
+    width: 15.15vw;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+}
+.index_sliderElementDiv a{
+    background-color: lightgreen;
+    border: none;
+    border-radius: 25px;
+    padding: 0.5vw;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    width: max-content;
+    margin-bottom: 2vh;
+    cursor: pointer;
+    transition-duration: 0.3s;
+    width: max-content;
+    display: inline-block;
+    font-family: Lato;
+}
+.index_sliderElementDiv a:hover{
+    background-color: rgb(85, 197, 85);
+    transform: translateX(-50%) scale(1.05);
+}
+#index_sliderGlobal{
+    display: flex;
+    gap: 1vw;
+    animation: slider 14s linear;
+    animation-iteration-count: infinite;
+}
+#index_sliderGlobal:hover{
+    animation-play-state: paused;
+}
+#index_div2{
+    background-color: rgb(191, 255, 191);
+    width: fit-content;
+    border-radius: 40px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    margin-top: 4vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+#index_div2 h1{
+    margin-left: 5vw;
+    font-family: Lato;
+    text-decoration: underline;
+}
+#index_div2 h2{
+    margin-left: 8vw;
+    font-family: Lato;
+    margin-top: 4vh;
+}
+.index_caracteristiqueElement::before{
+    width: 1vw;
+    height: 1vw;
+    content: "•";
+}
+.index_caracteristiqueElement{
+    display: flex;
+    align-items: center;
+    margin-left: 5vw;
+}
+.index_caracteristiqueElement img{
+    width: 4vw;
+    margin-right: 2vw;
+}
+.index_caracteristiqueElement p{
+    font-size: 18px;
+    font-family: Lato;
+    width: 25vw;
+}
+#index_div2Div{
+    display: grid;
+    width: max-content;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    gap: 2vw;
+    margin-top: 5vh;
+}
+.index_caracteristiqueElementRow1{
+    grid-row: 1;
+}
+.index_caracteristiqueElementRow2{
+    grid-row: 2;
+}
+.index_caracteristiqueElementColumn1{
+    grid-column: 1;
+}
+.index_caracteristiqueElementColumn2{
+    grid-column: 2;
+}
+#index_div3{
+    margin-top: 10vh;
+    width: 100vw;
+    display: block;
+    height: 15vh;
+    background-size: cover;
+    background-image: url(./assets/wave-svg.png);
+}
+#index_div4{
+    width: 100vw;
+    background-color: rgb(191, 255, 191);
+    height: fit-content;
+    padding-top: 20vh;
+    padding-bottom: 8vh;
+}
+#index_allBackground{
+    width: 90%;
+    height: fit-content;
+    background-color: white;
+    margin-left: 50%;
+    transform: translate(-50%);
+    border-radius: 30px;
+    padding-top: 3vh;
+    padding-bottom: 5vh;
+}
+#index_allBackground h1{
+    text-decoration: underline;
+    font-family: Lato;
+    margin-left: 5vw;
+}
+.index_allElementDiv{
+    box-shadow: 2px 2px 4px 2px lightgray;
+    width: fit-content;
+    border-radius: 30px;
+    padding-bottom: 2vh;
+    transition-duration: 0.5s;
+    width: 15vw;
+}
+.index_allElementDiv:hover{
+    transform: scale(1.03);
+    box-shadow: 5px 5px 10px 4px lightgray;
+}
+.index_allElementDiv h3{
+    font-family: Lato;
+    margin-left: 2vw;
+    cursor: default;
+}
+.index_allElementDiv p{
+    margin-left: 3vw;
+    font-family: Lato;
+    cursor: default;
+}
+.index_allElementDiv a{
+    background-color: lightgreen;
+    border: none;
+    border-radius: 25px;
+    padding: 0.5vw;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    width: max-content;
+    margin-bottom: 2vh;
+    cursor: pointer;
+    transition-duration: 0.3s;
+    display: inline-block;
+    width: max-content;
+    font-family: Lato;
+}
+.index_allElementDiv a:hover{
+    background-color: rgb(85, 197, 85);
+}
+.index_allElementDiv img{
+    width: 12vw;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    aspect-ratio: 1/1;
+    object-fit: contain;
+}
+#index_allDiv{
+    display: flex;
+    margin-top: 6vh;
+    gap: 4vw;
+    flex-wrap: wrap;
+    width: 72vw;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+#header_active{
+    background-color: rgba(255, 255, 255, 0.5)!important;
+    transform: scale(1.05);
+}
+#panier_Title{
+    font-family: lato;
+    margin-left: 10vw;
+    text-decoration: underline;
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+}
+#panier_contentDiv{
+    border: solid 2px black;
+    width: 60vw;
+    border-radius: 30px;
+    align-items: center;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 2vw;
+    grid-row: 1;
+}
+.panier_contentDiv{
+    display: flex;
+    width: 80%;
+}
+.panier_contentDiv div{
+    flex-direction: column;
+}
+.panier_contentDiv img{
+    width: 12.5vw;
+    aspect-ratio: 16/9;
+    object-fit: contain;
+}
+.panier_contentDiv div p{
+    font-family: Lato;
+}
+#panier_globalDiv{
+    display: grid;
+    column-gap : 5vw;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    width: fit-content;
+}
+#panier_priceDiv{
+    font-family: Lato;
+    border: solid 2px black;
+    border-radius: 20px;
+    width: 25vw;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    grid-row: 1;
+}
+#panier_priceDiv p{
+    text-align: center;
+}
+#panier_payButton{
+    margin-left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(191, 255, 191);
+    border: none;
+    border-radius: 20px;
+    padding: 0.75vw;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 2vw;
+    transition-duration: 0.25s;
+}
+#panier_payButton:hover{
+    background-color: rgb(85, 197, 85);
+    transform: translateX(-50%)scale(1.1);
+}
+.panier_changeQuantityDiv img{
+    width: 2vw;
+    border: solid 0.15vw black;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    padding: 0.1vw;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+.panier_changeQuantityDiv p{
+    margin: 0px;
+    width: 2vw;
+    text-align: center;
+    font-size: 1.5vw;
+    font-family: Lato;
+}
+.panier_changeQuantityDiv{
+    display: flex;
+    flex-direction: initial !important;
+    align-items: center;
+    height: fit-content;
+    margin-top: 2.5%;
+    transform: translateY(50%);
+    position: absolute;
+    right: 5vw;
+}
+#panier_paiementAcceptés{
+    width: max-content;
+    font-size: 18px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+#panier_priceDiv div img{
+    height: 6vh;
+    max-width:  6vw;
+    object-fit: contain;
+}
+#panier_priceDiv div{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2vw;
+}
+.panier_upperPrice:hover{
+    background-color: lightgreen;
+}
+.panier_lowerPrice:hover{
+    background-color: red;
+}
+#login_mainPartDiv{
+    border: solid 2px black;
+    border-radius: 30px;
+    width: 50vw;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 5vw;
+    padding: 2vw;
+}
+form{
+    display: flex;
+    flex-direction: column  ;
+    gap: 1vw;
+    align-items: center;
+}
+#login_mainPartDiv h1{
+    font-family: Lato;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 6vw;
+}
+#login_mainPartDiv input{
+    height: 2.5vw;
+    text-align: center;
+    width: 50%;
+    border-radius: 25px;
+    border: solid 1px black;
+    font-size: 16px;
+}
+#login_mainPartDiv input:focus{
+    background-color: rgb(226, 248, 255);
+}   
+#login_mainPartDiv input:active{
+    border: none;
+}
+#login_validateButton{
+    width: 25%!important;
+    margin-top: 3vw;
+    background-color: rgb(191, 255, 191);
+    border: none!important;
+    height: 3.5vw!important;
+    font-size: 17px;
+    transition-duration: 0.25s;
+    cursor: pointer;
+    box-shadow: none!important;
+}
+#login_validateButton:hover{
+    background-color: rgb(85, 197, 85);
+    transform: scale(1.05);
+}
+#login_noAccount{
+    text-align: center;
+    font-family: Lato;
+}
+#login_noAccount a{
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+#login_rememberDiv{
+    display: flex;
+    width: max-content;
+    align-items: center;
+    margin-top: 1vw;
+    gap: 0.5vw;
+}
+#login_rememberDiv input{
+    margin: 0px;
+    width: 1.5vw;
+    height: 1.5vw;
+    cursor: pointer;
+    transition-duration: 0.5s;
+    border-radius: 10%;
+}
+#login_rememberDiv input:checked{
+    animation: rotation 0.5s ease-in-out;
+}
+#login_rememberDiv input:not(:checked){
+    animation: rotationInverse 0.5s ease-in-out;
+}   
+#login_rememberDiv p{
+    width: max-content;
+    margin: 0px;
+    font-family: Lato;
+}
+footer{
+    height: fit-content;
+    background-color: rgb(191, 255, 191);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-family: Lato;
+    padding-top: 3vw;
+}
+footer h1{
+    margin: 0px;
+}
+footer div{
+    text-align: center;
+}
+footer p{
+    cursor: pointer;
+}
+footer div form{
+    display: flex;
+    flex-direction: row;
+}
+footer div form input[type=submit]{
+    border: none;
+    border-radius: 20px;
+    background-color: black;
+    color:white;
+    padding: 0.5vw;
+    cursor: pointer;
+}
+#footer_rankDiv{
+    width: fit-content;
+    height: 4vw;
+    padding-right: 4vw;
+    display: flex;
+}
+#footer_rankDiv img{
+    position: absolute;
+    width: 4vw;
+    height: 4vw;
+}
+#footer_filed{
+    width: 1.5vw!important;
+    object-fit: cover;
+    object-position: -0.1vw;
+}
+#footer_firstDiv{
+    display: flex;
+    justify-content: space-around;
+}
+#footer_secondDiv{
+    margin-top: 2vw;
+    display: flex;
+    align-items: center;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    width: fit-content;
+    margin-bottom: 2vw;
+}
+#footer_secondDiv p{
+    margin-right: 2vw;
+}
+.footer_star{
+    position: relative!important
+}
+#panier_promoDiv{
+    grid-row: 2;
+    display: flex;
+    margin-top: 2vw;
+    margin-left: 2vw;
+    align-items: center;
+    animation: wiggle 2s linear infinite;
+    width: fit-content;
+}
+#panier_promoDiv:hover{
+    animation: none;
+}
+#panier_promoImg{
+    border-top: solid 5px black;
+    border-right: solid 5px black;
+    width: 1vw;
+    height: 1vw;
+    transform: rotate(45deg);
+    transition-duration: 0.5s;
+}
+#panier_promoDiv input{
+    height: 2vw;
+    padding-left: 1vw;
+}
+#panier_wrapper{
+    cursor: pointer;
+    background-color: rgb(191, 255, 191);
+    height: 2.5vw;
+    align-items: center;
+    display: flex;
+    padding-right: 0.5vw;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition-duration: 0.5s;
+}
+#panier_wrapper:hover{
+    padding-left: 1vw;
+    padding-right: 4vw;
+}
+#panier_wrapper:hover  #panier_promoImg{
+    transform: rotate(-135deg) ;
+}
+#panier_wrapper:hover  p{
+    opacity: 1;
+    display: inline!important;
+    margin-left: 1vw;
+}
+#panier_validate{
+    position: absolute;
+    opacity: 0;
+    transition-duration: 0.4s;
+    font-family: Lato;
+}
+
+@media screen and (max-width: 1024px){
+    #header_header{
+        height: 10vh;
+        align-items: center;
+    }
+    #header_logo{
+
+    }
+    #header_div1{
+        display: none;
+    }
+    #header_div2 a{
+        height:10vh;
+        background-color: transparent;
+    }
+    .header_buttonInternDiv p{
+        display: none;
+    }
+    #header_div2 a img{
+        min-height: 8vh;
+        max-height: 8vh;
+    }
+    #header_div2 a{
+        height: fit-content;
+    }
+    .header_buttonInternDiv{
+        margin-top: 125%;
+    }
+    #header_div2{
+        gap: 15vw;
+    }
+    #index_sliderGlobal{
+        position: absolute  ;
+        animation: sliderMobile 14s linear;
+        animation-iteration-count : infinite;
+        max-height: 40vh;
+    }
+    #index_div2{
+        margin-top: 50vh;
+    }
+    .index_sliderElementDiv img{
+        width: 100%;
+        max-height: 20vh;
+    }
+    .index_sliderElementDiv{
+        width: 40vw;
+    }
+    .index_sliderElementDiv a{
+        padding: 2vw;
+    }
+    #index_div2Div{
+        display: flex;
+        flex-direction: column;
+    }
+    #index_div2{
+        width: 80vw;
+    }
+    .index_caracteristiqueElement p{
+        width: 60vw;
+    }
+    .index_caracteristiqueElement::before{
+        margin-right: 2vw;
+    }
+    .index_caracteristiqueElement img{
+        width: 10vw;
+    }
+    #index_div3{
+        height: 7.5vh;
+    }
+    .index_allElementDiv{
+        width: 34vw;
+        position: relative;
+    }
+    .index_allElementDiv img{
+        width: 100%;
+    }
+    .index_allElementDiv p{
+        text-align: center;
+    }
+    .index_allElementDiv h3{
+        text-align: center;font-size: 15px;
+    }
+    .index_allElementDiv a{
+        padding: 1vw;
+        font-size: 14px;
+        position: absolute;
+        bottom: 1vh;
+    }
+    body{
+        position: relative;
+        width: 100vw;
+    }
+    #panier_Title{
+        text-align: center;
+        margin-bottom: 5vh;
+        margin-top: 5vh;
+    }
+    #panier_globalDiv{
+        flex-direction: column;
+        display: flex;
+    }
+    #panier_contentDiv{
+        width: 80vw;
+        padding: 5vw;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+    .panier_itemPicture{
+        width: 30vw!important;
+    }
+    .panier_contentDiv{
+        align-items: center;
+    }
+    .panier_changeQuantityDiv{
+        gap: 2vw;
+    }
+    .panier_changeQuantityDiv img{
+        width: 5vw;
+        border: none;
+    }
+    .panier_contentDiv div p{
+        font-size: 16px;
+    }
+    #panier_priceDiv{
+        width: 75vw;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        margin-top: 5vh;
+    }
+    #panier_payButton{
+        padding: 3vw;
+    }
+    #panier_priceDiv div img{
+        max-width: 12vw;
+        height: 12vh;
+    }
+    #login_mainPartDiv{
+        height: fit-content;
+        width: 80vw;
+        margin-top: 10vh;
+        padding-bottom: 2.5vh;
+    }
+    #login_mainPartDiv input{
+        height: 4vh;
+        width: 80%;
+    }
+    #login_remember{
+        height: 2vh!important;
+    }
+    #login_rememberDiv p{
+        min-width: max-content;
+    }
+    #login_rememberDiv{
+        gap: 5vw;
+    }
+    #login_validateButton{
+        height: 5vh!important;
+    }
+    #login_mainPartDiv h1{
+        margin-top: 3vh;
+        margin-bottom: 5vh;
+    }
+    form{
+        gap: 3vh;
+    }
+    #index_allBackground h1{
+        font-size: 7vw
+    }
+    #footer_firstDiv{
+        flex-direction: column;
+    }
+    footer div form{
+        margin-left: 50%;
+        transform: translateX(-50%);
+        width: fit-content;
+    }
+    #footer_rankDiv img{
+        width: 7vw;
+        height: 7vw;
+    }
+    #footer_filed{
+        width: 3vw!important;
+    }
+    #footer_secondDiv{
+        flex-direction: column;
+        margin-bottom: 5vw;
+    }
+    #panier_promoDiv{
+        margin-left: 50%;
+        transform: translateX(-50%);
+        margin-top: 5vw;
+        height: fit-content;
+        animation: none;
+    }
+    #panier_promoDiv input{
+        height: 6vw;
+    }
+    #panier_wrapper{
+        height: 8vw;
+        width: 8vw;
+        padding-left: 1vw;
+    }
+    #panier_wrapper:hover p{
+        margin-left: 3vw;
+    }
+    #panier_promoImg{
+        height: 3vw;
+        width: 3vw;
+    }
+    #panier_wrapper:hover{
+        width: 15vw;
+    }
+}
+
+@keyframes slider {
+    from{
+        transform: translateX(0%);
+    }
+    to{
+        transform: translateX(-99%);
+    }
+}
+@keyframes sliderMobile {
+    from{
+        transform: translateX(0%);
+    }
+    to{
+        transform: translateX(-46.25%);
+    }
+}
+@keyframes rotation {
+    0%{
+        transform: rotate(0);
+        filter: blur(0.5px);
+    }
+    100%{
+        transform: rotate(360deg);
+        filter: blur(0.5px);
+    }
+}
+@keyframes rotationInverse {
+    0%{
+        transform: rotate(0);
+        filter: blur(0.5px);
+    }
+    100%{
+        transform: rotate(-360deg);
+        filter: blur(0.5px);
+    }
+}
+@keyframes wiggle {
+    0%, 7% {
+        transform: rotateZ(0);
+      }
+      15% {
+        transform: rotateZ(-10deg);
+      }
+      20% {
+        transform: rotateZ(6deg);
+      }
+      25% {
+        transform: rotateZ(-6deg);
+      }
+      30% {
+        transform: rotateZ(3deg);
+      }
+      35% {
+        transform: rotateZ(-2deg);
+      }
+      40%, 100% {
+        transform: rotateZ(0);
+      }
+}

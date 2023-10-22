@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./index.css" rel="stylesheet">
+    <title>Login</title>
+</head>
+<body>
+    <header id="header_header">
+        <img src="./assets/logo.png" id="header_logo" onclick="window.location = './index.html'">
+        <div id="header_div1">
+            <h1>AIR-PC</h1>
+            <p id="header_description">Vendeur de PC ultra-portable</p>
+        </div>
+        <div id="header_div2">
+            <a id="header_active"><div class="header_buttonInternDiv"><img src="./assets/User-icon.png"><p>Me Connecter</p></div></a>
+            <a href="./panier.html"><div class="header_buttonInternDiv"><img src="./assets/Panier-icon.png"><p>Mon Panier</p></div></a>
+        </div>
+    </header>
+    <div id="login_mainPartDiv">
+        <h1>Me connecter</h1>
+        <form method="post">
+            <input type="email" placeholder="email">
+            <input type="password" placeholder="mot de passe" minlength="10">
+            <div id="login_rememberDiv">
+                <input type="checkbox" id="login_remember">      
+                <p>Rester connecté</p>          
+            </div>
+            <input type="submit" id="login_validateButton">   
+        </form>
+    </div>
+    <p id="login_noAccount">Vous n'avez pas de compte ? <a>Créer une compte</a></p>
+    <footer style="margin-top: 5vw;">
+        <div id="footer_firstDiv">
+            <div>
+                <h1>INFOS PRATIQUES</h1>
+                <p>Points fidélité</p>
+                <p>Mentions Légales</p>
+                <p>CGV</p>
+            </div>
+            <div>
+                <h1>A PROPOS</h1>
+                <p>SAV</p>
+                <p>Service client</p>
+                <p>Livraisons et retour</p>
+                <p>Nos valeurs</p>
+            </div>
+            <div>
+                <h1>NEWSLETTER</h1>
+                <p>Découvrez en avance nos nouveaux produits</p>
+                <form>
+                    <input type="email" placeholder="Votre Email">
+                    <input type="submit" value="M'inscrire">
+                </form>
+            </div>
+        </div>
+        <div id="footer_secondDiv">
+            <p>Avis de la boutique :</p>
+            <div id="footer_rankDiv">
+                <img src="./assets/starFilled.png" class="footer_star">
+                <img src="./assets/starFilled.png" class="footer_star">
+                <img src="./assets/starFilled.png" class="footer_star">
+                <img src="./assets/starFilled.png" class="footer_star">
+                <div>
+                    <img src="./assets/star.png">
+                    <img src="./assets/starFilled.png" id="footer_filed">
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
